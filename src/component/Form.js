@@ -84,10 +84,23 @@ const Form = () => {
     >
       <ScrollView contentContainerStyle={styles.scrollArea}>
         <View style={styles.formContainer}>
-          <Image
+          {/* <Image
             source={require('../image/mainCard.png')}
             style={{ width: '100%', height: 100, alignSelf: 'center', marginBottom: 20}}
-          />
+          /> */}
+          <View style={{ width: '100%', maxWidth: 300, alignSelf: 'center', marginBottom: 20 }}>
+  <Image
+    source={require('../image/mainCard.png')}
+    style={{
+      width: '100%',
+      height: undefined,
+      aspectRatio: 3,
+      resizeMode: 'contain',
+    }}
+  />
+</View>
+
+
 
           <Text style={styles.text}>Fill the Form</Text>
 

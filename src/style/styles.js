@@ -51,9 +51,15 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 5, // Shadow for Android
   },
+  // cardWrapper: {
+  //   flexDirection: 'column', // Aligns items vertically
+  //   gap: 10,
+  // },
+
   cardWrapper: {
-    flexDirection: 'column', // Aligns items vertically
+    flexDirection: 'column',
     gap: 10,
+    padding: 10, // Add spacing from screen edge
   },
 
   card: {
@@ -69,9 +75,17 @@ const styles = StyleSheet.create({
     width: '90%',
   },
 
+  // image: {
+  //   width: '100%',
+  //   // height: "100%",
+  //   marginBottom: 10,
+  // },
+
   image: {
     width: '100%',
-    // height: "100%",
+    height: 180, // or 'auto', but fixed height is better for consistency
+    resizeMode: 'cover', // or 'contain' if you want full image visible
+    borderRadius: 8,
     marginBottom: 10,
   },
 
